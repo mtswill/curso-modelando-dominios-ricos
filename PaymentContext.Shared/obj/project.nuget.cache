@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aImFfX/foHVBynPv/MC5VTNji79OSrVbrJU2EmUU8rM/u4ypXic+4rapr25eRFbRhDi5wums+KTu5PhpG2nKkg==",
+  "dgSpecHash": "8D0spMN4i9lIch7nOW8jMi/+HRxkjDc+YpSmKUzhCBGfElzdQJ9/1KIKs/JQ+0ZVRlHyaKSOiA0rwsOxvIttmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\matheus\\source\\repos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\matheus\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

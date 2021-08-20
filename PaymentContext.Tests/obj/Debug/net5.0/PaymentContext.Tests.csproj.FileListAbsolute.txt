@@ -102,3 +102,4 @@ C:\Users\matheus\source\repos\PaymentContext\PaymentContext.Tests\obj\Debug\net5
 C:\Users\matheus\source\repos\PaymentContext\PaymentContext.Tests\obj\Debug\net5.0\ref\PaymentContext.Tests.dll
 C:\Users\matheus\source\repos\PaymentContext\PaymentContext.Tests\obj\Debug\net5.0\PaymentContext.Tests.pdb
 C:\Users\matheus\source\repos\PaymentContext\PaymentContext.Tests\obj\Debug\net5.0\PaymentContext.Tests.genruntimeconfig.cache
+C:\Users\matheus\source\repos\PaymentContext\PaymentContext.Tests\bin\Debug\net5.0\Flunt.dll
