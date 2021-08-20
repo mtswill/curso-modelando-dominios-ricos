@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using Flunt.Notifications;
 using PaymentContext.Domain.Enums;
 using PaymentContext.Shared.ValueObjects;
 
@@ -7,18 +5,26 @@ namespace PaymentContext.Domain.ValueObjects
 {
     public class Document : ValueObject
     {
-        private IList<Notification> _notifications;
-
-        public Document(string numer, EDocumentType type)
+        public Document(string number, EDocumentType type)
         {
-            Numer = numer;
+            Number = number;
             Type = type;
-            _notifications = new List<Notification>();
 
-            AddNotifications(_notifications);
+            //validações
         }
 
-        public string Numer { get; private set; }
+        public string Number { get; private set; }
         public EDocumentType Type { get; set; }
+
+        private bool Validate()
+        {
+            if (Type.Equals(EDocumentType.CNPJ) && Number.Length.Equals(14))
+                return true;
+
+            if (Type.Equals(EDocumentType.CPF) && Number.Length.Equals(11))
+                return true;
+
+            return false;
+        }
     }
 }
