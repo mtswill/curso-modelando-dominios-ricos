@@ -31,12 +31,16 @@ namespace PaymentContext.Domain.Entities
 
         public void AddSubscription(Subscription subscription)
         {
-            foreach (var sub in Subscriptions)
+            var hasSubscriptionActive = false;
+
+            foreach (var sub in _subscriptions)
             {
-                sub.Inactivate();
+                if (sub.Active)
+                    hasSubscriptionActive = true;
             }
 
-            _subscriptions.Add(subscription);
+            if (!hasSubscriptionActive)
+                _subscriptions.Add(subscription);
         }
     }
 }

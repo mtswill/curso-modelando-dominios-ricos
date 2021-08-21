@@ -9,14 +9,12 @@ namespace PaymentContext.Domain.ValueObjects
         {
             Number = number;
             Type = type;
-
-            //validações
         }
 
         public string Number { get; private set; }
         public EDocumentType Type { get; set; }
 
-        private bool Validate()
+        public bool Validate()
         {
             if (Type.Equals(EDocumentType.CNPJ) && Number.Length.Equals(14))
                 return true;
