@@ -43,7 +43,7 @@ namespace PaymentContext.Tests
             _student.AddSubscription(_subscription);
             _student.AddSubscription(_subscription);
 
-            Assert.IsFalse((_subscription.Payments != null) && (_subscription.Payments.Count > 0));
+            Assert.IsTrue((_subscription.Payments == null) || (_subscription.Payments.Count <= 0));
         }
 
         [TestMethod]

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using PaymentContext.Shared.Entities;
 
 namespace PaymentContext.Domain.Entities
@@ -21,7 +22,13 @@ namespace PaymentContext.Domain.Entities
         public DateTime LastUpdateDate { get; private set; }
         public DateTime? ExpireDate { get; private set; }
         public bool Active { get; private set; }
-        public List<Payment> Payments { get; private set; }
+        public List<Payment> Payments
+        {
+            get
+            {
+                return _payments.ToList();
+            }
+        }
 
         public void AddPayment(Payment payment)
         {
